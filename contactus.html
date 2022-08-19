@@ -26,9 +26,9 @@
           <div class="col">
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
-          </div>
-        </div>
-      </div>
+          </div> <!-- end col -->
+        </div> <!-- end row -->
+      </div> <!-- end container -->
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -77,17 +77,83 @@
         </div>
       </div>
 
+      <!-- Form Description-->
       <div class="row row-content">
         <div class="col-12">
           <h2>Send us your Feedback</h2>
           <hr />
         </div>
         <div class="col-md-10">
-          Form goes here
-        </div>
-      </div>
+          <form action="">
+            <!-- First Name -->
+            <div class="form-group row">
+              <label for="firstName" class="col-md-2 col-form-label">First Name </label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name" />
+              </div> <!-- end col -->
+            </div> <!-- end row -->
 
-    </div>
+            <!-- Last Name -->
+            <div class="form-group row">
+              <label for="lastName" class="col-md-2 col-form-label">Last Name </label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name" />
+              </div> <!-- end col -->
+            </div> <!-- end row -->
+
+            <!-- Phone Number -->
+            <div class="form-group row">
+              <label for="areaCode" class="col-md-2 col-form-label">Contact Tel. </label>
+              <div class="col-5 col-md-3">
+                <input type="tel" class="form-control" name="areaCode" id="areaCode" placeholder="Area Code" />
+              </div> <!-- end col -->
+              <div class="col-7">
+                <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+              </div> <!-- end col -->
+            </div> <!-- end row -->
+
+            <!-- Email -->
+            <div class="form-group row">
+              <label for="email" class="col-md-2 col-form-label">Email</label>
+              <div class="col-md-10">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+              </div> <!-- end col -->
+            </div> <!-- end row -->
+
+            <!-- Contact Consent -->
+            <div class="form-group row">
+              <div class="col offset-md-2">
+                May we contact you?
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="contactRadios" id="contactYes" value="yes">
+                  <label for="contactYes" class="form-check-label"> Yes</label>
+                </div> <!-- end form check -->
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="contactRadios" id="contactNo" value="no">
+                  <label for="contactNo" class="form-check-label"> No</label>
+                </div> <!-- end form check -->
+              </div> <!-- end col -->
+            </div> <!-- end row -->
+
+            <!-- Feedback area -->
+            <div class="form-group row">
+              <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+              <div class="col-md-10">
+                <textarea class="form-control" name="feedback" id="feedback" rows="8"></textarea>
+              </div> <!-- end col -->
+            </div> <!-- end row -->
+
+            <!-- Submit button -->
+            <div class="form-group row">
+              <div class="offset-md-2 col-md-10">
+                <button type="submit" class="btn btn-primary">Send Feedback</button>
+              </div> <!-- end col -->
+            </div> <!-- end row -->
+          </form>
+        </div> <!-- end col -->
+      </div> <!-- end row -->
+
+    </div> <!-- end container -->
 
     <footer>
       <div class="container">
@@ -100,7 +166,7 @@
               <li><a href="#">Sites</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-          </div>
+          </div> <!-- end col -->
           <div class="col-6 col-sm-5 text-center">
             <h5>Social</h5>
             <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
@@ -108,15 +174,15 @@
             <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
             <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
             <a class="btn btn-solial-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-          </div>
+          </div> <!-- end col -->
           <div class="col-sm-4 text-center">
             <a role="button" class="btn btn-link" href="+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a>
             <br />
             <a role="button" class="btn btn-link" href="mailto:campsties@nucamp.co"><i class="fa fa-envelope-o"></i>
               campsites@nucamp.co</a>
-          </div>
-        </div>
-      </div>
+          </div> <!-- end col -->
+        </div> <!-- end row -->
+      </div> <!-- end container -->
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
