@@ -11,7 +11,7 @@
 
   <!-- Additional Styles -->
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
-  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
   <link rel="stylesheet" href="css/styles.css" />
 
@@ -25,7 +25,7 @@
     <div class="container">
       <div class="row">
         <div class="col-4 col-sm-3 col-md-2 align-self-center">
-          <img src="img/logo.png" class="img-fluid" />
+          <img src="img/logo.png" alt="Nucamp Logo" class="img-fluid" />
         </div> <!-- end col -->
 
         <div class="col">
@@ -34,7 +34,7 @@
         </div> <!-- end col -->
 
         <div class="col-md-4 col-xl-2 mt-4">
-          <a href="reserveForm" class="btn btn-info btn-lg">Reserve Campsite</a>
+          <a href="#reserveForm" class="btn btn-info btn-lg">Reserve Campsite</a>
         </div> <!-- end col-->
       </div> <!-- end row -->
     </div> <!-- end container -->
@@ -43,11 +43,11 @@
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" alt="" /></a>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" alt="Nucamp Logo" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse id=" nucampNavbar">
+      <div class="collapse navbar-collapse id="nucampNavbar">
         <ul class="navbar-nav">
           <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
           <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
@@ -124,8 +124,8 @@
               <!-- Select Number of Campers -->
               <div class="form-group row">
                 <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
-                <div class="col form-control">
-                  <select name="numCampers" id="numCampers">
+                <div class="col">
+                  <select class="form-control" name="numCampers" id="numCampers">
                     <option value="">Select...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -140,14 +140,14 @@
               <!-- Reservation Date -->
               <div class="form-group row">
                 <label class="col-sm-6 col-form-label" for="date">Date</label>
-                <div class="col form-control">
-                  <input type="date" id="date" name="date" placeholder="" />
+                <div class="col">
+                  <input class="form-control" type="date" id="date" name="date" placeholder="" />
                 </div> <!-- end col -->
               </div> <!-- end row -->
 
               <div class="form-group row">
                 <div class="col">
-                  <button class="btn btn-primary" type="submit">Search</button>
+                  <input class="btn btn-primary" type="submit" value="Search" />
                 </div> <!-- end col -->
               </div> <!-- end row -->
             </form>
