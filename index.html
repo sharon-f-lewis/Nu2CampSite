@@ -32,6 +32,10 @@
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
           </div> <!-- end col -->
+
+          <div class="col-md-4 col-xl-2 mt-4">
+            <a href="reserveForm" class="btn btn-info btn-lg">Reserve Campsite</a>
+          </div> <!-- end col-->
         </div> <!-- end row -->
       </div> <!-- end container -->
     </header>
@@ -57,6 +61,8 @@
 
     <!-- Main Site Content -->
     <div class="container">
+
+      <!-- Discover and Review -->
       <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
           <h2 class="text-sm-right">Discover & Review</h2>
@@ -64,7 +70,7 @@
 
         <div class="col">
           <div class="media">
-            <img class="d-flex mr-3 igm-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail Camp">
+            <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail Camp" />
             <div class="media-body">
               <h3>Our Campsites</h3>
               <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!
@@ -74,18 +80,27 @@
         </div> <!-- end col -->
       </div> <!-- end row -->
 
+      <!-- Featured Campsites -->
       <div class="row row-content align-items-center">
         <div class="col-sm-4 col-md-3">
           <h2>Featured Campsites</h2>
         </div> <!-- end col -->
+
         <div class="col">
-          <h3>React Lake Campground</h3>
-          <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores
-            of the pristine React Lake
-            is a favorite for fly fishers.</p>
+          <div class="media">
+            <div class="media-body">
+              <h3>React Lake Campground</h3>
+              <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
+                shores
+                of the pristine React Lake
+                is a favorite for fly fishers.</p>
+            </div> <!-- end media-body -->
+            <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake Campground" />
+          </div> <!-- end media -->
         </div> <!-- end col -->
       </div> <!-- end row -->
 
+      <!-- Community Partners -->
       <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
           <h2 class="text-sm-right">Our Community Partners</h2>
@@ -100,6 +115,48 @@
               </p>
             </div> <!-- end media body -->
           </div> <!-- end media -->
+        </div> <!-- end col -->
+      </div> <!-- end row -->
+
+      <!-- Reservation Form -->
+      <div class="row row-content">
+        <div class="col-sm-6 mx-auto">
+          <div class="card">
+            <h3 class="card-header bg-info text-white">Reserve Campsite</h3>
+            <div class="card-body">
+              <form id="reserveForm" action="">
+
+                <!-- Select Number of Campers -->
+                <div class="form-group row">
+                  <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                  <div class="col form-control">
+                    <select name="numCampers" id="numCampers">
+                      <option value="">Select...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div> <!-- end col -->
+                </div> <!-- end row -->
+
+                <div class="form-group row">
+                  <label class="col-sm-6 col-form-label" for="date">Date</label>
+                  <div class="col form-control">
+                    <input type="date" id="date" name="date" placeholder="" />
+                  </div> <!-- end col -->
+                </div> <!-- end row -->
+
+                <div class="form-group row">
+                  <div class="col">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                  </div> <!-- end col -->
+                </div> <!-- end row -->
+              </form>
+            </div> <!-- end card-body -->
+          </div> <!-- end card -->
         </div> <!-- end col -->
       </div> <!-- end row -->
     </div> <!-- end container -->
@@ -133,7 +190,6 @@
           </div> <!-- end col -->
         </div> <!-- end row -->
       </div> <!-- end container -->
-
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
