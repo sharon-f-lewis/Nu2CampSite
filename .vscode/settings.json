@@ -2,5 +2,6 @@
   "cSpell.words": [
     "nucamp",
     "Nucamp"
-  ]
+  ],
+  "prettier.endOfLine": "crlf"
 }
