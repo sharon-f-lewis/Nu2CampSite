@@ -1,7 +1,14 @@
 {
   "cSpell.words": [
+    "aboutus",
+    "contactus",
+    "copyfiles",
+    "copyfonts",
+    "endbuild",
+    "htmlmin",
     "nucamp",
-    "Nucamp"
+    "Nucamp",
+    "usemin"
   ],
   "prettier.endOfLine": "crlf"
 }
